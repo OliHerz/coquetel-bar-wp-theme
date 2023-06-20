@@ -86,8 +86,7 @@ function themeCoquetel_register_assets(){
   wp_enqueue_style('style', get_stylesheet_uri(). './../dist/styles.css');
 
   // // Import du script JS  & Chargement
-  wp_enqueue_script('script', get_theme_file_uri(). '../dist/script.js');
-  // Chargement du script CSS
+  wp_enqueue_script('script', get_theme_file_uri('dist/script.js'), array(), '1.0', true); 
 }
 
 
